@@ -28,12 +28,13 @@ npm install
 
 ### 2. Start the backend
 
+From the project root:
+
 ```bash
-cd backend
-CONTENT_DIR=../content go run ./cmd/server/main.go
+go run ./backend/cmd/server/main.go
 ```
 
-The backend starts on **http://localhost:6000**.
+The backend auto-detects the `content/` folder. It starts on **http://localhost:6000**.
 
 ### 3. Start the frontend dev server
 
@@ -66,9 +67,9 @@ Visit **http://localhost:5173** in your browser.
 cd frontend
 npm run build
 
-# Run the backend serving the built frontend
-cd ../backend
-CONTENT_DIR=../content FRONTEND_DIR=../frontend/dist go run ./cmd/server/main.go
+# Run the backend serving the built frontend (from project root)
+cd ..
+go run ./backend/cmd/server/main.go
 ```
 
 Then visit **http://localhost:6000**.
@@ -78,5 +79,5 @@ Then visit **http://localhost:6000**.
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `PORT` | `6000` | Backend server port |
-| `CONTENT_DIR` | `../../content` | Path to kata content directory |
-| `FRONTEND_DIR` | `../../frontend/dist` | Path to built frontend assets |
+| `CONTENT_DIR` | auto-detected | Path to kata content directory (searches `content/`, `../content/`, `../../content/`) |
+| `FRONTEND_DIR` | auto-detected | Path to built frontend assets (searches `frontend/dist/`, `../frontend/dist/`, `../../frontend/dist/`) |

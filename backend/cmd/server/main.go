@@ -11,17 +11,26 @@ import (
 	"golang-katas/backend/internal/services"
 )
 
-func main() {
-	contentDir := "../../content"
-	if dir := os.Getenv("CONTENT_DIR"); dir != "" {
-		contentDir = dir
+func findDir(envKey string, candidates []string) string {
+	if dir := os.Getenv(envKey); dir != "" {
+		return dir
 	}
+	for _, c := range candidates {
+		if info, err := os.Stat(c); err == nil && info.IsDir() {
+			return c
+		}
+	}
+	return candidates[0]
+}
+
+func main() {
+	contentDir := findDir("CONTENT_DIR", []string{"content", "../content", "../../content"})
 
 	katas, err := services.LoadAllKatas(contentDir)
 	if err != nil {
-		log.Fatalf("Failed to load katas: %v", err)
+		log.Fatalf("Failed to load katas from %s: %v", contentDir, err)
 	}
-	log.Printf("Loaded %d katas", len(katas))
+	log.Printf("Loaded %d katas from %s", len(katas), contentDir)
 
 	mux := http.NewServeMux()
 
@@ -30,10 +39,7 @@ func main() {
 	mux.HandleFunc("POST /api/playground/run", handlers.RunCode())
 	mux.HandleFunc("GET /api/health", handlers.Health())
 
-	frontendDir := "../../frontend/dist"
-	if dir := os.Getenv("FRONTEND_DIR"); dir != "" {
-		frontendDir = dir
-	}
+	frontendDir := findDir("FRONTEND_DIR", []string{"frontend/dist", "../frontend/dist", "../../frontend/dist"})
 	mux.Handle("/", http.FileServer(http.Dir(frontendDir)))
 
 	handler := middleware.Logger(middleware.CORS(mux))

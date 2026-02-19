@@ -2,21 +2,21 @@
 
 ## Project Setup
 
-- [ ] Project scaffolding and folder structure
-- [ ] Landing page with Katas and Applications cards
-- [ ] Sidebar with kata sequence navigation
-- [ ] Light/dark theme toggle
+- [x] Project scaffolding and folder structure
+- [x] Landing page with Katas and Applications cards
+- [x] Sidebar with kata sequence navigation
+- [x] Light/dark theme toggle
 - [ ] Resizable code/preview panels with maximize buttons
 
 ## Learning Phases
 
 ### Phase 0 — Go as a Language
-- [ ] Packages and `main`
-- [ ] Variables and zero values
-- [ ] Basic types
-- [ ] Short variable declarations
-- [ ] Control flow (`if`, `for`, `switch`)
-- [ ] Functions and multiple return values
+- [x] Packages and `main`
+- [x] Variables and zero values
+- [x] Basic types
+- [x] Short variable declarations
+- [x] Control flow (`if`, `for`, `switch`)
+- [x] Functions and multiple return values
 
 ### Phase 1 — Structs, Methods & Data Modeling
 - [ ] Structs and field visibility

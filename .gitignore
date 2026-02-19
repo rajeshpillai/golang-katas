@@ -1,6 +1,7 @@
 # Go
 backend/tmp/
 backend/cmd/server/server
+backend/server
 
 # Node
 frontend/node_modules/

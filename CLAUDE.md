@@ -263,6 +263,30 @@ These are capstone-level katas.
 
 ---
 
+## Kata Layout (MANDATORY)
+
+Each kata must present two tabs/sections:
+
+### 1. Description Tab
+- **Concept overview** — What this kata teaches and why it matters in Go
+- **Technical explanation** — Detailed, in-depth coverage of the underlying concept (how it works at the language/runtime level)
+- **Design rationale** — Why Go chose this approach; comparison with other languages where helpful
+- **Common mistakes** — Pitfalls learners typically encounter, with explanations of *why* they fail
+- **Key takeaways** — Concise summary of what the learner should remember
+
+The Description tab is the **primary teaching surface**. It must be thorough enough that a learner can understand the concept without external resources.
+
+### 2. Live Code Tab
+- **Broken/naive version (❌)** — Starting code that demonstrates the wrong or incomplete approach
+- **Correct/idiomatic solution (✅)** — The fixed, idiomatic Go version
+- **Editable code area** — Learners can modify and experiment with the code
+- **Output panel** — Shows execution results or test output
+- **Design tradeoff note (🧠)** — Brief inline annotation explaining the tradeoff demonstrated
+
+The Live Code tab is the **hands-on practice surface**. Code must be runnable and testable.
+
+---
+
 ## Kata Design Rules (MANDATORY)
 
 Each kata must include:
@@ -301,6 +325,12 @@ This system is successful if learners can:
 ---
 
 ## UI & Platform Requirements
+
+### Project Structure
+- **`frontend/`** — All frontend code (UI, components, assets, styles)
+- **`backend/`** — All backend code (API, kata execution, server logic)
+- Frontend and backend must be cleanly separated into their respective folders
+- Backend must use Go **`net/http`** (standard library) as the HTTP framework
 
 ### Coding Conventions
 - All file and folder names must be **lowercase-hyphenated**

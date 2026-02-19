@@ -28,13 +28,12 @@ npm install
 
 ### 2. Start the backend
 
-From the project root:
-
 ```bash
-go run ./backend/cmd/server/main.go
+cd backend
+go run ./cmd/server/main.go
 ```
 
-The backend auto-detects the `content/` folder. It starts on **http://localhost:6000**.
+The backend auto-detects the `content/` folder — no env vars needed. It starts on **http://localhost:6000**.
 
 ### 3. Start the frontend dev server
 
@@ -67,9 +66,9 @@ Visit **http://localhost:5173** in your browser.
 cd frontend
 npm run build
 
-# Run the backend serving the built frontend (from project root)
-cd ..
-go run ./backend/cmd/server/main.go
+# Run the backend serving the built frontend
+cd ../backend
+go run ./cmd/server/main.go
 ```
 
 Then visit **http://localhost:6000**.

@@ -19,109 +19,109 @@
 - [x] Functions and multiple return values
 
 ### Phase 1 — Structs, Methods & Data Modeling
-- [ ] Structs and field visibility
-- [ ] Methods and receivers
-- [ ] Value receivers vs pointer receivers
-- [ ] When copying is cheap vs expensive
+- [x] Structs and field visibility
+- [x] Methods and receivers
+- [x] Value receivers vs pointer receivers
+- [x] When copying is cheap vs expensive
 
 ### Phase 2 — Pointers & Memory Basics
-- [ ] Pointers and dereferencing
-- [ ] Passing values vs pointers
-- [ ] Escape analysis (conceptual)
-- [ ] Common pointer pitfalls
+- [x] Pointers and dereferencing
+- [x] Passing values vs pointers
+- [x] Escape analysis (conceptual)
+- [x] Common pointer pitfalls
 
 ### Phase 3 — Error Handling as Design
-- [ ] Returning errors
-- [ ] Custom error types
-- [ ] Wrapping errors
-- [ ] Sentinel errors vs typed errors
-- [ ] When to panic vs return error
+- [x] Returning errors
+- [x] Custom error types
+- [x] Wrapping errors
+- [x] Sentinel errors vs typed errors
+- [x] When to panic vs return error
 
 ### Phase 4 — Interfaces (Core Abstraction)
-- [ ] Interface definition
-- [ ] Implicit implementation
-- [ ] Small interfaces
-- [ ] Interface satisfaction
-- [ ] Interface values and nil pitfalls
+- [x] Interface definition
+- [x] Implicit implementation
+- [x] Small interfaces
+- [x] Interface satisfaction
+- [x] Interface values and nil pitfalls
 
 ### Phase 5 — Composition over Inheritance
-- [ ] Struct embedding
-- [ ] Promoted methods
-- [ ] Reuse via composition
-- [ ] Avoiding inheritance-style thinking
+- [x] Struct embedding
+- [x] Promoted methods
+- [x] Reuse via composition
+- [x] Avoiding inheritance-style thinking
 
 ### Phase 6 — Collections & Data Structures
-- [ ] Arrays vs slices
-- [ ] Slice internals (length vs capacity)
-- [ ] Maps and zero values
-- [ ] Iteration patterns
-- [ ] Common pitfalls with reference types
+- [x] Arrays vs slices
+- [x] Slice internals (length vs capacity)
+- [x] Maps and zero values
+- [x] Iteration patterns
+- [x] Common pitfalls with reference types
 
 ### Phase 7 — Generics (Carefully)
-- [ ] Type parameters
-- [ ] Constraints
-- [ ] When generics help
-- [ ] When interfaces are better
-- [ ] Avoiding generic abuse
+- [x] Type parameters
+- [x] Constraints
+- [x] When generics help
+- [x] When interfaces are better
+- [x] Avoiding generic abuse
 
 ### Phase 8 — Testing & Tooling
-- [ ] `testing` package
-- [ ] Table-driven tests
-- [ ] Subtests
-- [ ] Benchmarks
-- [ ] `go test`, `go vet`, `go fmt`
+- [x] `testing` package
+- [x] Table-driven tests
+- [x] Subtests
+- [x] Benchmarks
+- [x] `go test`, `go vet`, `go fmt`
 
 ### Phase 9 — Concurrency Fundamentals
-- [ ] Goroutines
-- [ ] Channels
-- [ ] Blocking behavior
-- [ ] Directional channels
-- [ ] `select` statement
+- [x] Goroutines
+- [x] Channels
+- [x] Blocking behavior
+- [x] Directional channels
+- [x] `select` statement
 
 ### Phase 10 — Synchronization & Coordination
-- [ ] `sync.Mutex`
-- [ ] `sync.RWMutex`
-- [ ] `sync.WaitGroup`
-- [ ] Atomic operations
-- [ ] Common concurrency bugs
+- [x] `sync.Mutex`
+- [x] `sync.RWMutex`
+- [x] `sync.WaitGroup`
+- [x] Atomic operations
+- [x] Common concurrency bugs
 
 ### Phase 11 — Context & Lifecycles
-- [ ] `context.Context`
-- [ ] Cancellation propagation
-- [ ] Timeouts and deadlines
-- [ ] Context misuse pitfalls
+- [x] `context.Context`
+- [x] Cancellation propagation
+- [x] Timeouts and deadlines
+- [x] Context misuse pitfalls
 
 ### Phase 12 — Memory, Performance & GC Awareness
-- [ ] Stack vs heap (conceptual)
-- [ ] Garbage collection basics
-- [ ] Allocation patterns
-- [ ] Profiling (`pprof`)
-- [ ] Avoiding premature optimization
+- [x] Stack vs heap (conceptual)
+- [x] Garbage collection basics
+- [x] Allocation patterns
+- [x] Profiling (`pprof`)
+- [x] Avoiding premature optimization
 
 ### Phase 13 — Files, Networking & IO
-- [ ] File IO
-- [ ] TCP/UDP basics
-- [ ] HTTP servers and clients
-- [ ] Streaming data
-- [ ] Error handling in IO-heavy code
+- [x] File IO
+- [x] TCP/UDP basics
+- [x] HTTP servers and clients
+- [x] Streaming data
+- [x] Error handling in IO-heavy code
 
 ### Phase 14 — Building Web Services (Standard Library First)
-- [ ] `net/http`
-- [ ] Middleware patterns
-- [ ] Routing basics
-- [ ] Request/response lifecycle
-- [ ] Graceful shutdown
+- [x] `net/http`
+- [x] Middleware patterns
+- [x] Routing basics
+- [x] Request/response lifecycle
+- [x] Graceful shutdown
 
 ### Phase 15 — Advanced Concurrency Patterns
-- [ ] Worker pools
-- [ ] Fan-in / fan-out
-- [ ] Backpressure
-- [ ] Rate limiting
-- [ ] Avoiding goroutine leaks
+- [x] Worker pools
+- [x] Fan-in / fan-out
+- [x] Backpressure
+- [x] Rate limiting
+- [x] Avoiding goroutine leaks
 
 ### Phase 16 — Advanced Systems Patterns
-- [ ] Plugin-like architectures
-- [ ] Configuration management
-- [ ] Observability (logs, metrics)
-- [ ] Dependency management
-- [ ] Long-running service design
+- [x] Plugin-like architectures
+- [x] Configuration management
+- [x] Observability (logs, metrics)
+- [x] Dependency management
+- [x] Long-running service design

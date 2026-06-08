@@ -355,6 +355,12 @@ The landing page must display two cards:
 
 ---
 
+## Git & Commits
+
+- When committing and pushing, **do not add Claude as a co-author**. Do not append any `Co-Authored-By: Claude` trailer or similar attribution to commit messages.
+
+---
+
 ## Final Instruction
 
 Teach Go as a **language of clarity, discipline, and concurrency**.

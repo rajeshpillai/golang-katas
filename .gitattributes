@@ -1,0 +1,7 @@
+# Force LF line endings for source and content files so kata markdown parses
+# correctly across platforms (the loader splits on \n).
+*.md   text eol=lf
+*.go   text eol=lf
+*.json text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf

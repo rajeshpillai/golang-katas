@@ -69,7 +69,10 @@ func parseKataFile(path string) (models.Kata, error) {
 		return models.Kata{}, err
 	}
 
-	content := string(data)
+	// Normalize Windows CRLF (and lone CR) line endings so section names and
+	// code blocks parse correctly regardless of how the markdown was authored.
+	content := strings.ReplaceAll(string(data), "\r\n", "\n")
+	content = strings.ReplaceAll(content, "\r", "\n")
 
 	fm, body, err := parseFrontmatter(content)
 	if err != nil {
